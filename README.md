@@ -1,65 +1,78 @@
-# Zomato-Restaurants-Analysis-using-Excel-Sql-PowerBI
-Zomato Restaurant Data Analysis Project
-This project involved analyzing Zomato restaurant data using advanced Excel functions and SQL queries, and creating interactive dashboards using Power BI. The objectives of the project were:
+ 
+# Zomato Restaurants Analysis using Excel, SQL & Power BI
 
-#Building a country map table
+## 📌 Project Overview
 
-#Building a calendar table using the column datekey and adding columns such as year, monthno, monthfullname, quarter(Q1,Q2,Q3,Q4), yearmonth (YYYY-MMM), weekdayno, weekdayname, financialmonth (April = FM1, May= FM2 … March = FM12), and financial quarter (quarters based on financial month)
+This project analyzes the **Zomato Global Restaurant Dataset** using **Excel, SQL, and Power BI** to uncover insights on restaurant distribution, customer ratings, pricing, services, and cuisine patterns.
+The workflow integrates **data cleaning (Excel), SQL queries for aggregation, and Power BI dashboards** to deliver interactive business intelligence on restaurant industry trends.
 
-#Finding the number of restaurants by city and country
+---
 
-#Analyzing restaurant opening trends by year, quarter, and month
+## 🎯 Objectives
 
-#Counting restaurants by average ratings
+* Build a **country map table** to link country codes with names.
+* Build a **calendar table** from `Datekey_Opening` with attributes: Year, MonthNo, MonthName, Quarter (Q1–Q4), YearMonth (YYYY-MMM), WeekdayNo, WeekdayName, FinancialMonth (April–March), and FinancialQuarter.
+* Find the **number of restaurants by city and country**.
+* Analyze **restaurant opening trends** by year, quarter, and month.
+* Count restaurants by **average rating bands**.
+* Create **price range buckets** and calculate restaurant distribution per bucket.
+* Calculate the **percentage of restaurants with table booking and online delivery**.
+* Develop charts based on **cuisines, city, ratings, and services**.
 
-#Creating buckets for average price ranges and finding out how many restaurants fall in each bucket
+---
 
-#Calculating the percentage of restaurants with table booking and online delivery options
+## 🛠 Tools & Technologies
 
-#Developing charts based on cuisines, city, ratings, and other relevant parameters
+* **Excel** – Data cleaning, ETL workflows, and aggregation.
+* **SQL** – Querying, aggregation, and transformation.
+* **Power BI** – Interactive dashboards, visual analytics, and storytelling.
 
-To achieve these objectives, the project used various advanced Excel functions such as VLOOKUP, PivotTables, and conditional formatting. SQL queries were executed to extract relevant data from the Zomato dataset. The resulting data was then used to create interactive dashboards using Power BI , providing valuable insights into restaurant industry trends related to location, opening trends, ratings, and price ranges.
+---
 
-The project showcases the use of Excel, SQL, and dashboard tools such as Power BI  for data analysis and visualization, and provides a valuable resource for anyone interested in learning more about these tools and techniques.
+## 📂 Excel Implementation
 
+* **SUMIFS / COUNTIFS** – to count restaurants based on criteria (ratings, services).
+* **PivotTables & PivotCharts** – to summarize openings, cuisines, and service adoption.
+* **Conditional Formatting** – to highlight outliers and key insights.
+* **VLOOKUP & INDEX-MATCH** – to merge country codes and dimension tables.
+* **DATE & YEAR functions** – to build the **calendar table**.
+* **Report Connections** – linking multiple PivotTables & charts to a single slicer for dynamic filtering.
 
-Excel
-To achieve the objectives of the Zomato Restaurant Data Analysis project, various advanced Excel functions were used, including:
+---
 
-SUMIFS and COUNTIFS functions to extract and count data based on specific criteria
-PivotTables and PivotCharts to summarize and analyze data
-Conditional formatting to highlight key insights in the data
-Report connections to link multiple PivotTables and charts to a single slicer, allowing for dynamic filtering of the data
-VLOOKUP and INDEX-MATCH functions to merge data from different tables
-DATE and YEAR functions to extract information from date fields
+## 🗄️ SQL Implementation
 
+* **SELECT / FROM / WHERE** – to retrieve and filter data.
+* **GROUP BY / ORDER BY / HAVING** – for aggregation and trend analysis.
+* **Window Functions** (`ROW_NUMBER`, `RANK`, `DENSE_RANK`) – to rank cuisines, cities, and high-rated restaurants.
+* **Date Functions** (`DATEADD`, `DATEDIFF`, `DATEPART`) – to extract time-based insights (yearly, quarterly, monthly openings).
 
-SQL
-To extract relevant data from the Zomato dataset, SQL queries were executed using the following keywords:
+---
 
-SELECT to retrieve data from specific columns
-FROM to specify the table to retrieve data from
-WHERE to filter data based on specific conditions
-GROUP BY to group data based on specific columns
-ORDER BY to sort data in ascending or descending order
-HAVING to filter data based on aggregated values
-Window functions, such as ROW_NUMBER, RANK, and DENSE_RANK, to perform calculations on subsets of data
-Date functions, such as DATEADD, DATEDIFF, and DATEPART, to extract information from date fields and perform date calculations
+## 📊 Power BI Implementation
 
+* **Data Modeling** – created relationships between fact and dimension tables.
+* **DAX Measures** – for dynamic KPIs (average rating, % restaurants with booking/delivery).
+* **Visualizations** – bar charts, maps, rating distributions, price segmentation, cuisine breakdown.
+* **Slicers & Filters** – enabled dynamic filtering by **country, city, cuisine, and time period**.
+* **Drill-through Functionality** – to navigate between country-level, city-level, and cuisine-level insights.
 
-Power BI
-To visualize and analyze the Zomato restaurant data, Power BI was used to create interactive dashboards. The following features and functions were utilized:
+---
 
-Data modeling using relationships between tables and calculated columns
-Measures and DAX formulas to perform calculations on the data
-Visualizations such as tables, charts, and maps to display the data
-Slicers and filters to enable dynamic filtering of the data
-Drill-through functionality to navigate between different levels of detail in the data
+## 🔑 Key Results & Insights
 
+* Only **12.1% of restaurants offer table booking** and **25.7% support online delivery**, with just **0.35% delivering in real-time**.
+* Global **average rating = 2.89/5**, with median votes at **23** and 90th percentile votes at **388**.
+* **Indian, Chinese, and Italian cuisines dominate (\~40%)**, showing concentrated demand.
+* **Top 10 cities host \~45% of restaurants**, while most countries have limited representation.
+* Built an **interactive Power BI dashboard** to explore restaurant openings, cuisines, and service adoption trends.
 
+--
 
+## 🚀 Key Learnings
 
-
-
-
-
+* Practical application of **Excel ETL workflows, SQL window functions, and DAX in Power BI**.
+* Hands-on experience in **data modeling, temporal trend analysis, and BI storytelling**.
+* Developed a reusable framework for **end-to-end data analysis and visualization projects**.
+ 
+Would you like me to also create a **`📂 Project Structure` section** (with folders like `data/`, `sql/`, `excel/`, `dashboard/`) so your repo looks even more polished?
