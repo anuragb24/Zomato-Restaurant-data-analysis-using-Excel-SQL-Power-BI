@@ -6,8 +6,6 @@
 This project analyzes the **Zomato Global Restaurant Dataset** using **Excel, SQL, and Power BI** to uncover insights on restaurant distribution, customer ratings, pricing, services, and cuisine patterns.
 The workflow integrates **data cleaning (Excel), SQL queries for aggregation, and Power BI dashboards** to deliver interactive business intelligence on restaurant industry trends.
 
----
-
 ## 🎯 Objectives
 
 * Build a **country map table** to link country codes with names.
